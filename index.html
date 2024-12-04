@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            color:white;
+            background-color: black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Pattern</title>
+</head>
+<body>
+    <h1>Diamond Pattern</h1>
+    <p>To access open console window or press F12</p>
+    <p id="demo"></p>
+    <script>
+        function Diamond(n){
+            let result="";
+            
+            //upper piramid
+            for(i=1;i<=n;i++){
+               let str=" ".repeat(n-i)+"*".repeat(2*i-1)
+               console.log(str)
+            }
+
+            //lower piramid
+            for(i=n-1;i>=1;i--){
+                let str=" ".repeat(n-i)+"*".repeat(2*i-1)
+                console.log(str)
+         
+            }
+        }
+        Diamond(5)
+         
+     
+    </script>
+</body>
+</html>
